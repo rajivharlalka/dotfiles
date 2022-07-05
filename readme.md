@@ -4,7 +4,8 @@ These are some of my unarranged uncategorized currently using dotfiles which mak
 
 ```sh
 // copy dotfiles
-sudo chmod 400 ./setup.sh
+sudo chmod 100 ./setup.sh
+./setup.sh
 ```
 
 Ciao
