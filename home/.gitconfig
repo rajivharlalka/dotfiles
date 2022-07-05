@@ -1,18 +1,18 @@
 [user]
 	name = rajivharlalka
 	email = rajivharlalka009@gmail.com
+	signingkey = D23D0DADF8760C47
 [commit]
 	gpgsign = true
     	verbose = true
 [pull]
     	rebase = false
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pager]
     diff = delta
-    log = delta
     reflog = delta
     show = delta
 
-[interactive]
-    diffFilter = delta --color-only --features=interactive
+[core]
+	editor = code

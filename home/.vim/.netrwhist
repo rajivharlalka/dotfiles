@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/vijard/Documents/projects/intern/mello/griffin'
+let g:netrw_dirhist_9='/home/vijard/Documents/projects/intern/mello/griffin/config'
+let g:netrw_dirhist_8='/home/vijard/Documents/projects/intern/mello/griffin'
+let g:netrw_dirhist_7='/home/vijard/Documents/projects/tada-app'
+let g:netrw_dirhist_6='/home/vijard/Documents/projects'
+let g:netrw_dirhist_5='/home/vijard/Documents'
+let g:netrw_dirhist_4='/home/vijard'
+let g:netrw_dirhist_3='/home'
+let g:netrw_dirhist_2='/'
+let g:netrw_dirhist_1='/home'

@@ -76,7 +76,7 @@ deleted = "🗑"
 
 [hostname]
 ssh_only = false
-# suffix = "⟫"
+suffix = "⟫"
 trim_at = "."
 disabled = false
 
