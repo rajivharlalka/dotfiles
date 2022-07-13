@@ -6,7 +6,7 @@
 	gpgsign = true
     	verbose = true
 [pull]
-    	rebase = false
+	rebase = false
 [init]
 	defaultBranch = main
 [pager]
@@ -15,4 +15,4 @@
     show = delta
 
 [core]
-	editor = code
+	editor = nvim
