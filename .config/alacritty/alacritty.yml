@@ -74,7 +74,7 @@ font:
     style: Italic
 
   # Point size of the font
-  size: 13
+  size: 10
 
 # Live config reload (changes require restart)
 live_config_reload: true
