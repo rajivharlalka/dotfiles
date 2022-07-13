@@ -1,20 +1,22 @@
-" Disable compatibility with vi which can cause unexpected issues.
+"Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
-" Enable type file detection. Vim will be able to try to detect the type of file in use.
+"Enable type file detection. Vim will be able to try to detect the type of file in use.
 filetype on
 
-" Enable plugins and load plugin for the detected file type.
+"Enable plugins and load plugin for the detected file type.
 filetype plugin on
 
-" Load an indent file for the detected file type.
+"Load an indent file for the detected file type.
 filetype indent on
 filetype plugin indent on
+
 "Turn on sytax Highlighting"
 syntax on
 
 "Add number lines"
 set number
+
 " Set shift width to 4 spaces.
 set shiftwidth=4
 
@@ -56,7 +58,7 @@ set showmatch
 set hlsearch
 
 " Set the commands to save in history default number is 20.
-set history=1000
+set history=5000
 
 " Enable auto completion menu after pressing TAB.
 set wildmenu
