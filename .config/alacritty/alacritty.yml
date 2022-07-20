@@ -89,7 +89,7 @@ shell:
   args:
     - -l
     - -c
-    - "tmux attach || tmux"
+    - "tmux"
 
 selection:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'

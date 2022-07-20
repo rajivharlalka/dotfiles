@@ -106,9 +106,6 @@ zplug load
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-export FLYCTL_INSTALL="/home/vijard/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -125,10 +122,11 @@ alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
 
-alias vi=vim
+alias vi=vnim
 alias svi='sudo vi'
-alias vis='vim "+set si"'
-alias edit='vim'
+alias vis='nvim "+set si"'
+alias edit='nvim'
+alias vim='nvim'
 
 alias ports='netstat -tulanp'
 
@@ -152,7 +150,7 @@ alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
  
 ## Get server cpu info ##
 alias cpuinfo='lscpu'
- 
+
 ## older system use /proc/cpuinfo ##
 ##alias cpuinfo='less /proc/cpuinfo' ##
  
