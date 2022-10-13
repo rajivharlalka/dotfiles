@@ -1,9 +1,9 @@
 add_newline = true
 
-format = """
-[┌───────────────────>](bold green)
-[│](bold green)$all
-[└─>](bold green) """
+# format = """
+# [┌───────────────────>](bold green)
+# [│](bold green)$all
+# [└─>](bold green) """
 
 
 [battery]
@@ -76,7 +76,6 @@ deleted = "🗑"
 
 [hostname]
 ssh_only = false
-suffix = "⟫"
 trim_at = "."
 disabled = false
 
