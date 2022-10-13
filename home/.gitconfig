@@ -4,15 +4,13 @@
 	signingkey = D23D0DADF8760C47
 [commit]
 	gpgsign = true
-    	verbose = true
+    verbose = true
 [pull]
 	rebase = false
 [init]
 	defaultBranch = main
 [pager]
     diff = delta
-    reflog = delta
     show = delta
-
 [core]
 	editor = nvim
