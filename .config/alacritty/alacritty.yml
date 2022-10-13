@@ -1,5 +1,5 @@
 import:
-  - "/home/vijard/dotfiles/.config/alacritty/mocha-color.yml"
+  - "/home/vijard/dotfiles/.config/alacritty/tokyo-night.yml"
 
 env:
   # TERM variable
@@ -29,7 +29,7 @@ window:
     y: 10
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -58,23 +58,26 @@ window:
 
   # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
-  opacity: 0.90
+  opacity: 0.9
 
 # Font configuration
 draw_bold_text_with_bright_colors: true
 font:
   normal:
-    family: FiraCode Nerd Font
+    family: FiraCode
     style: Regular
   bold:
-    family: FiraCode Nerd Font
+    family: FiraCode
     style: Bold
   italic:
-    family: FiraCode Nerd Font
+    family: FiraCode
     style: Italic
 
   # Point size of the font
-  size: 10
+  size: 11
+  use_thin_strokes: true
+  offset:
+    x: 1
 
 # Live config reload (changes require restart)
 live_config_reload: true
@@ -93,6 +96,5 @@ shell:
 
 selection:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
-
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
