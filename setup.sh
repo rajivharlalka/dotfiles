@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
 
-ln -s ~/dotfiles/.config/* ~/.config
-ln -s ~/dotfiles/home/.* ~/
+# Inportant packages
+packages=("fzf" "zoxide" "nvim" "zsh" "git")
+for package in "${packages[@]}"
+do
+   echo "$package"
+done
+
+#ln -sif ~/dotfiles/.config/* ~/.config
+#ln -sif ~/dotfiles/home/.* ~/
