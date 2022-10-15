@@ -70,11 +70,16 @@ starship_precmd_user_func="Terminal"
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Psst, you can use the alias: "
 export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="_ ll vi ls"
 
+
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# ctrl+left and ctrl+left to move word by word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+# ctrl+backspace to delete word
+bindkey "^H" backward-kill-word
 
 # Install plugins if there are plugins that have not been installed (copied from the zplug readme)
 if ! zplug check --verbose; then
