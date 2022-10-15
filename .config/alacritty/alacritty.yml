@@ -75,7 +75,6 @@ font:
 
   # Point size of the font
   size: 11
-  use_thin_strokes: true
   offset:
     x: 1
 
