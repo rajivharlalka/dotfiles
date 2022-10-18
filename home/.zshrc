@@ -120,6 +120,7 @@ alias now='date +"%T"'
 alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
 
+alias vim=nvim
 alias vi=nvim
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
