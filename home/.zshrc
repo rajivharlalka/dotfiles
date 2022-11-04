@@ -81,6 +81,9 @@ bindkey "^[[1;5D" backward-word
 # ctrl+backspace to delete word
 bindkey "^H" backward-kill-word
 
+#delete key to delete work backwords
+bindkey "^[[3~" delete-char
+
 # Install plugins if there are plugins that have not been installed (copied from the zplug readme)
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
@@ -164,5 +167,9 @@ zplug load
 
 export STARSHIP_CONFIG=~/dotfiles/.config/starship/starship.toml
 
+export FLYCTL_INSTALL="/home/vijard/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
 # Launch Starship
 eval "$(starship init zsh)"
+source /usr/share/nvm/init-nvm.sh
