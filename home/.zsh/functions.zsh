@@ -1,3 +1,5 @@
+
+#Run Code -Code runner for C/C++ codes
 rc() {
     #!/bin/bash
     PROG_NAME=$1
@@ -7,9 +9,7 @@ rc() {
     fi  
 }
 
-# Reload this file in the shell, useful after making changes
-alias reload='source ~/.bash_profile'
-
 # Make dir and cd into it with 'take' or just 'tk'
-function take() { mkdir -p $1; cd $1; }
-alias tk='take'
+function take() {
+     mkdir -p $1; cd $1;
+ }
