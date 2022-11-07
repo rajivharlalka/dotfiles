@@ -5,7 +5,6 @@ source /usr/share/zsh/scripts/zplug/init.zsh
 zplug "plugins/git", from:oh-my-zsh
 
 zplug "zsh-users/zsh-autosuggestions"
-
 # Color highlighting in terminal
 zplug "zdharma/fast-syntax-highlighting"
 # Auto suggests commands based on history
