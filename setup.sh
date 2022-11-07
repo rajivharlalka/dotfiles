@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 
 # Inportant packages
-packages=("fzf" "zoxide" "nvim" "zsh" "git")
+packages=("fzf" "zoxide" "neovim" "zsh" "git" "bat" "tmux")
 for package in "${packages[@]}"
 do
-   echo "$package"
+   if pacman -Q $package > /dev/null ; then
+       echo "$@ The package $package is installed"
+   else
+      echo "The package $package is not installed"
+      sudo pacman -S $package
+   fi
 done
 
 #ln -sif ~/dotfiles/.config/* ~/.config
