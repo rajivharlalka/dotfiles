@@ -118,6 +118,11 @@ pyenv_prefix = "pyenv"
 style = "bold yellow"
 disabled = false
 
+[localip]
+ssh_only = false
+format = "@[$localipv4](bold red) "
+disabled = false
+
 # [time]
 # format = "🕙%T"
 # style_root = "bold red"
