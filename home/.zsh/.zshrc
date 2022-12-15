@@ -15,10 +15,10 @@ source ~/dotfiles/home/.zsh/functions.zsh
 
 starship_precmd_user_func="Terminal"
 
-#kubectl codecompletion
-if [ $commands[kubectl] ]; then
-  source <(kubectl completion zsh)
-fi
+# #kubectl codecompletion
+# if [ $commands[kubectl] ]; then
+#   source <(kubectl completion zsh)
+# fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -32,7 +32,13 @@ export STARSHIP_CONFIG=~/dotfiles/.config/starship/starship.toml
 export FLYCTL_INSTALL="/home/vijard/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
-source /usr/share/nvm/init-nvm.sh
+export DENO_INSTALL="/home/vijard/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+export GO_PATH="/home/vijard/go"
+export PATH="$PATH:$GO_PATH/bin"
+
+autoload /usr/share/nvm/init-nvm.sh
 
 # Launch Starship
 eval "$(starship init zsh)"
