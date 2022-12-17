@@ -10,10 +10,9 @@ sudo chmod 100 ./setup.sh
 
 Ciao
 
-System : Arch Linux
-DE : Gnome
-Theme: WhiteSur
-Font: JetBrainsMono nerd Font
-Terminal: Alacritty+Zsh+Starship
-
-![screenshot](./assets/screenshot.png)
+- System : Arch Linux
+- DE : Gnome
+- Theme: WhiteSur
+- Font: JetBrainsMono nerd Font
+- Terminal: Alacritty + Tmux + starship + zsh
+- Editor: Vscode + Nvim
