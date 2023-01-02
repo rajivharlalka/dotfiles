@@ -66,3 +66,5 @@ alias dotfiles='code ~/dotfiles'
 
 alias ..='cd ..'
 alias ...='cd ../..'
+
+alias type='typora ~/Documents/random 2>/dev/null'
