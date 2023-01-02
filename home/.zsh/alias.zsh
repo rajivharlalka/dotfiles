@@ -66,5 +66,3 @@ alias dotfiles='code ~/dotfiles'
 
 alias ..='cd ..'
 alias ...='cd ../..'
-
-alias grep="rg"

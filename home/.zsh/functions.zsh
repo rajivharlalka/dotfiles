@@ -13,3 +13,9 @@ rc() {
 function take() {
      mkdir -p $1; cd $1;
  }
+
+function gen_pass() {
+    length=${1:?"length must be specified"}
+    length=$((length/2))
+    dd if=/dev/random bs=1 count=${length} 2>/dev/null | od -An -tx1 | tr -d ' \t\n' ; echo
+}

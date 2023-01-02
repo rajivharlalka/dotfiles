@@ -27,11 +27,6 @@ setopt appendhistory
 setopt sharehistory
 setopt incappendhistory
 
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_REDUCE_BLANKS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_FIND_NO_DUPS
-
 # Install plugins if there are plugins that have not been installed (copied from the zplug readme)
 if ! zplug check --verbose; then
     printf "Install? [y/N]: "
