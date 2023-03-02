@@ -48,8 +48,8 @@ export PATH="$FLYCTL_INSTALL/bin:$PATH"
 export DENO_INSTALL="/home/vijard/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
-export GO_PATH="/home/vijard/go"
-export PATH="$PATH:$GO_PATH/bin"
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 autoload /usr/share/nvm/init-nvm.sh
 
