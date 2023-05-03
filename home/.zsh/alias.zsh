@@ -67,4 +67,6 @@ alias dotfiles='code ~/dotfiles'
 alias ..='cd ..'
 alias ...='cd ../..'
 
+alias lan='sudo ethtool -s enp4s0 speed 100 duplex full autoneg on'
+
 alias typora='typora ~/Documents/randoms/ 2>/dev/null'

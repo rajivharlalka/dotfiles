@@ -1,7 +1,6 @@
 #
 # ~/.bash_profile
 #
-
-[[ -f ~/.bashrc ]] && . ~/.bashrc
 export GPG_TTY=$(tty)
-. "$HOME/.cargo/env"
+export PATH="$HOME/.local/bin:$PATH"
+[[ -f ~/.bashrc ]] && . ~/.bashrc

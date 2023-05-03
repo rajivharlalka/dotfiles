@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Inportant packages
-packages=("fzf" "zoxide" "neovim" "zsh" "git" "bat" "tmux")
+packages=("fzf" "zoxide" "neovim" "zsh" "git" "bat" "tmux" "docker" "dnsutils" "net-tools" "flameshot" "htop" "xclip")
+
 for package in "${packages[@]}"
 do
    if pacman -Q $package > /dev/null ; then

@@ -13,19 +13,10 @@ zplug "zsh-users/zsh-autosuggestions"
 zplug "Aloxaf/fzf-tab"
 # General ZSH Plugins
 zplug "zsh-users/zsh-completions"
+
 zplug "zsh-users/zsh-history-substring-search", from:github, defer:2
+
 zplug "djui/alias-tips", from:github
-# SSH
-zplug "hkupty/ssh-agent", from:github
-
-# Make History Better
-HISTFILE="$HOME/.zsh_history"
-HISTSIZE=10000
-SAVEHIST=10000
-
-setopt appendhistory
-setopt sharehistory
-setopt incappendhistory
 
 # Install plugins if there are plugins that have not been installed (copied from the zplug readme)
 if ! zplug check --verbose; then

@@ -8,6 +8,10 @@ sudo chmod 100 ./setup.sh
 ./setup.sh
 ```
 
+For tmux packages
+Remove the .tmux directory from the root
+then press `<prefix>+ I` to install all packages
+
 Ciao
 
 - System : Arch Linux

@@ -15,6 +15,11 @@ source ~/dotfiles/home/.zsh/functions.zsh
 
 starship_precmd_user_func="Terminal"
 
+# Make History Better
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000
+SAVEHIST=10000
+
 setopt EXTENDED_HISTORY          # Write the history file in the ':start:elapsed;command' format.
 setopt INC_APPEND_HISTORY        # Write to the history file immediately, not when the shell exits.
 setopt SHARE_HISTORY             # Share history between all sessions.
@@ -42,11 +47,13 @@ export NVM_DIR="$HOME/.nvm"
 
 export STARSHIP_CONFIG=~/dotfiles/.config/starship/starship.toml
 
-export FLYCTL_INSTALL="/home/vijard/.fly"
+export FLYCTL_INSTALL="/home/rajiv/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
-export DENO_INSTALL="/home/vijard/.deno"
+export DENO_INSTALL="/home/rajiv/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+
+export PATH="/home/rajiv/.local/bin:$PATH"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin

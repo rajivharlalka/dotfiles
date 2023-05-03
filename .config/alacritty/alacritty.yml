@@ -1,5 +1,5 @@
 import:
-  - "/home/vijard/dotfiles/.config/alacritty/tokyo-night.yml"
+  - "/home/rajiv/dotfiles/.config/alacritty/tokyo-night.yml"
 
 env:
   # TERM variable
