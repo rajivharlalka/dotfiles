@@ -5,7 +5,6 @@
 #  /___|___/_| |_|
 
 # Initialize zoxide
-eval "$(zoxide init zsh)"
 
 source ~/dotfiles/home/.zsh/plugin.zsh
 source ~/dotfiles/home/.zsh/color-man.zsh
@@ -60,5 +59,6 @@ export PATH=$PATH:$GOPATH/bin
 
 autoload /usr/share/nvm/init-nvm.sh
 
+eval "$(zoxide init zsh)"
 # Launch Starship
 eval "$(starship init zsh)"
