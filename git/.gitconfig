@@ -1,0 +1,21 @@
+[user]
+	name = Rajiv Harlalka
+	email = 68731551+rajivharlalka@users.noreply.github.com
+	signingkey = 34FCAD5BF2A8DEF4
+[commit]
+	gpgsign = false
+  verbose = true
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[alias]
+  # Thanks r00k, this creates a pretty graph view of the log
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[pager]
+  diff = delta
+  show = delta
+[core]
+	editor = nvim
+[gpg]
+	program = /usr/bin/gpg
