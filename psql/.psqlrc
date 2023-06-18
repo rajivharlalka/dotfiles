@@ -3,7 +3,7 @@
 \set COMP_KEYWORD_CASE upper
 \set HISTFILE ~/.psql/history- :DBNAME
 \x auto
-\pset pager always
+\pset pager on 
 \pset null '(null)'
 \set PROMPT1 '(%n@%M:%>) %`date +%H:%M:%S` [%/] \n%x%# '
 \set PROMPT2 ''

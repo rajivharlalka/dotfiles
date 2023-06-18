@@ -1,6 +1,6 @@
 #### Alisas
 
-alias ls='exa --long --header --icons --sort=type'
+alias ls='exa --long --header --icons --sort=date'
 alias tree='exa --tree --level 3'
 alias sdn="sudo shutdown -h now" # Quick shutdown
 alias cp="cp -i" # Confirm before overwriting something
@@ -21,7 +21,6 @@ alias nowtime=now
 alias nowdate='date +"%d-%m-%Y"'
 
 alias vim=nvim
-alias vi=nvim
 alias svi='sudo vi'
 alias vis='nvim "+set si"'
 alias edit='nvim'
@@ -62,11 +61,9 @@ alias reload='source ~/.zshrc'
 
 alias tk='take'
 
-alias dotfiles='code ~/dotfiles'
+alias dotfiles='code-insiders ~/dots'
 
 alias ..='cd ..'
 alias ...='cd ../..'
 
 alias lan='sudo ethtool -s enp4s0 speed 100 duplex full autoneg on'
-
-alias typora='typora ~/Documents/randoms/ 2>/dev/null'

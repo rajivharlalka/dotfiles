@@ -1,10 +1,13 @@
 [user]
 	name = Rajiv Harlalka
 	email = 68731551+rajivharlalka@users.noreply.github.com
-	signingkey = 34FCAD5BF2A8DEF4
+	signingkey = C194EABC09F21D349C5872EAD41DAA4D4D6D6380
 [commit]
-	gpgsign = false
+	gpgsign = true
   verbose = true
+[github]
+	user = rajivharlalka
+
 [pull]
 	rebase = false
 [init]
@@ -12,6 +15,8 @@
 [alias]
   # Thanks r00k, this creates a pretty graph view of the log
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	mine = log -n 5 --author=$(whoami)
+
 [pager]
   diff = delta
   show = delta

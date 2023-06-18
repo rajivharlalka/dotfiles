@@ -4,7 +4,6 @@
 #   / /\__ \ | | |
 #  /___|___/_| |_|
 
-# Initialize zoxide
 
 source $HOME/plugin.zsh
 source $HOME/color-man.zsh
@@ -42,18 +41,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # run pfetch if terminal is interactive (https://github.com/dylanaraps/pfetch)
-[ -z "$PS1" ] || pfetch
 
 export STARSHIP_CONFIG=~/dotfiles/.config/starship/starship.toml
 
 . "$HOME/.cargo/env"
 export FLYCTL_INSTALL="/home/rajiv/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
-export DENO_INSTALL="/home/rajiv/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
-export PATH="/home/rajiv/.local/bin:$PATH"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
@@ -64,6 +57,9 @@ export GPG_TTY
 
 autoload /usr/share/nvm/init-nvm.sh
 
+# Initialize zoxide
 eval "$(zoxide init zsh)"
+
 # Launch Starship
+[ -z "$PS1" ] || pfetch
 eval "$(starship init zsh)"
