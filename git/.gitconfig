@@ -1,7 +1,7 @@
 [user]
 	name = Rajiv Harlalka
-	email = 68731551+rajivharlalka@users.noreply.github.com
-	signingkey = C194EABC09F21D349C5872EAD41DAA4D4D6D6380
+	email = rajivharlalka009@gmail.com
+	signingkey = D26E12876390933CAD0D198966AEB8D65FA8DE1A
 [commit]
 	gpgsign = true
   verbose = true

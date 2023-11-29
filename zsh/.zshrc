@@ -63,3 +63,14 @@ eval "$(zoxide init zsh)"
 # Launch Starship
 [ -z "$PS1" ] || pfetch
 eval "$(starship init zsh)"
+
+# >>>> Vagrant command completion (start)
+fpath=(/opt/vagrant/embedded/gems/gems/vagrant-2.3.6/contrib/zsh $fpath)
+compinit
+# <<<<  Vagrant command completion (end)
+
+PATH="/home/rajiv/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/home/rajiv/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/home/rajiv/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/home/rajiv/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/rajiv/perl5"; export PERL_MM_OPT;
