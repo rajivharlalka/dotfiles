@@ -67,3 +67,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 alias lan='sudo ethtool -s enp4s0 speed 100 duplex full autoneg on'
+
+# in your .bashrc/.zshrc/*rc
+alias bathelp='bat --plain --language=help'

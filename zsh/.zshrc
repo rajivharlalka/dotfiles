@@ -55,6 +55,9 @@ export PATH=$PATH:$GOPATH/bin
 GPG_TTY=$(tty)
 export GPG_TTY
 
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
 autoload /usr/share/nvm/init-nvm.sh
 
 # Initialize zoxide
