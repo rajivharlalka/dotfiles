@@ -7,6 +7,8 @@
 #   <r> <g> <b> range from 0 to 255 inclusive.
 #   The escape sequence ^[0m returns output to default
 
+# https://gist.github.com/andersevenrud/015e61af2fd264371032763d4ed965b6
+
 setBackgroundColor()
 {
     echo -en "\x1b[48;2;$1;$2;$3""m"
