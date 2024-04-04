@@ -24,3 +24,9 @@
 	editor = nvim
 [gpg]
 	program = /usr/bin/gpg
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = committerdate

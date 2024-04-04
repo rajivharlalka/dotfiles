@@ -1,7 +1,7 @@
 #### Alisas
 
-alias ls='exa --long --header --icons --sort=date'
-alias tree='exa --tree --level 3'
+alias ls='eza --long --header --icons --sort=date'
+alias tree='eza --tree --level 3'
 alias sdn="sudo shutdown -h now" # Quick shutdown
 alias cp="cp -i" # Confirm before overwriting something
 alias pkg="yay -Q | fzf"
