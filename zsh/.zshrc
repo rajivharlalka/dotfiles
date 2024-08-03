@@ -44,7 +44,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export STARSHIP_CONFIG=~/dotfiles/.config/starship/starship.toml
 
-. "$HOME/.cargo/env"
 export FLYCTL_INSTALL="/home/rajiv/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 

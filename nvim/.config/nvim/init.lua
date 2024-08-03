@@ -1,1 +1,1 @@
-require("rajiv")
+../../dots/nvim/.config/nvim/init.lua
