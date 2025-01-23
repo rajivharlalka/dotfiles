@@ -78,3 +78,5 @@ PERL_MB_OPT="--install_base \"/home/rajiv/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/rajiv/perl5"; export PERL_MM_OPT;
 
 PATH="/home/rajiv/scripts${PATH:+:${PATH}}"; export PATH;
+
+[ -f "/home/rajiv/.ghcup/env" ] && . "/home/rajiv/.ghcup/env" # ghcup-env
