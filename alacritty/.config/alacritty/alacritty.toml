@@ -6,15 +6,15 @@ TERM = "xterm-256color"
 size = 13
 
 [font.bold]
-family = "JetBrains Mono"
+family = "Hack Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "JetBrains Mono"
+family = "Hack Nerd Font Mono"
 style = "Italic"
 
 [font.normal]
-family = "JetBrains Mono"
+family = "Hack Nerd Font Mono"
 style = "Regular"
 
 [font.offset]
@@ -42,14 +42,14 @@ columns = 0
 lines = 0
 
 [window.padding]
-x = 10
-y = 10
+x = 0
+y = 0
 
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [general]
 live_config_reload = true
-import = ["/home/rajiv/dots/.config/alacritty/tokyo-night.toml"]
+import = ["/home/rajiv/.config/alacritty/tokyo-night.toml"]
 
 [terminal]

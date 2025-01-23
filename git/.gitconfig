@@ -37,3 +37,11 @@
     smtpUser = rajivharlalka009@gmail.com
 [credential]
     helper = store
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	side-by-side = true
+	line-numbers = true
+[merge]
+	conflictStyle = zdiff3
