@@ -30,3 +30,5 @@ configuration {
 
 }
 
+
+@theme "/usr/share/rofi/themes/Monokai.rasi"

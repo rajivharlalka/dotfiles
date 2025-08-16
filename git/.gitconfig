@@ -17,10 +17,13 @@
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	mine = log -n 5 --author=$(whoami)
 
+[column]
+	ui = auto
 [pager]
   diff = delta
   show = delta
 [core]
+	excludesfile = ~/.gitignore
 	editor = nvim
 [gpg]
 	program = /usr/bin/gpg
@@ -29,7 +32,16 @@
 [column]
 	ui = auto
 [branch]
-	sort = committerdate
+	sort = -committerdate
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
 [sendemail]
     smtpServer = smtp.gmail.com
     smtpServerPort = 587
@@ -37,6 +49,8 @@
     smtpUser = rajivharlalka009@gmail.com
 [credential]
     helper = store
+[help]
+	autocorrect = prompt
 [interactive]
 	diffFilter = delta --color-only
 [delta]

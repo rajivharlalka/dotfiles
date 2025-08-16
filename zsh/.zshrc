@@ -4,6 +4,7 @@
 #   / /\__ \ | | |
 #  /___|___/_| |_|
 
+zmodload zsh/zprof
 
 source $HOME/plugin.zsh
 source $HOME/color-man.zsh
@@ -31,18 +32,13 @@ setopt HIST_VERIFY               # Do not execute immediately upon history expan
 setopt APPEND_HISTORY            # append to history file
 setopt HIST_NO_STORE             # Don't store history commands
 
-# #kubectl codecompletion
-# if [ $commands[kubectl] ]; then
-#   source <(kubectl completion zsh)
-# fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # run pfetch if terminal is interactive (https://github.com/dylanaraps/pfetch)
 
-export STARSHIP_CONFIG=~/dotfiles/.config/starship/starship.toml
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 export FLYCTL_INSTALL="/home/rajiv/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
@@ -54,29 +50,28 @@ export PATH=$PATH:$GOPATH/bin
 GPG_TTY=$(tty)
 export GPG_TTY
 
+if [[ $- == *i* ]] && [[ -z "$TMUX" ]] && [[ "$TERM_PROGRAM" != "vscode" ]]; then
+  exec tmux
+fi
+
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 
 autoload /usr/share/nvm/init-nvm.sh
 
-# Initialize zoxide
-eval "$(zoxide init zsh)"
+if [[ ! -f ~/.zoxide.zsh ]] || [[ ! -f ~/.starship.zsh ]] || [[ ~/.zshrc -nt ~/.zoxide.zsh ]] || [[ ~/.zshrc -nt ~/.starship.zsh ]]; then
+  zoxide init zsh > ~/.zoxide.zsh
+  starship init zsh > ~/.starship.zsh
+fi
+source ~/.zoxide.zsh
+source ~/.starship.zsh
 
-# Launch Starship
-[ -z "$PS1" ] || pfetch
-eval "$(starship init zsh)"
-
-# >>>> Vagrant command completion (start)
-fpath=(/opt/vagrant/embedded/gems/gems/vagrant-2.3.6/contrib/zsh $fpath)
-compinit
-# <<<<  Vagrant command completion (end)
 
 PATH="/home/rajiv/perl5/bin${PATH:+:${PATH}}"; export PATH;
+export PATH=/home/rajiv/.local/bin:$PATH
 PERL5LIB="/home/rajiv/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/rajiv/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/rajiv/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/rajiv/perl5"; export PERL_MM_OPT;
 
 PATH="/home/rajiv/scripts${PATH:+:${PATH}}"; export PATH;
-
-[ -f "/home/rajiv/.ghcup/env" ] && . "/home/rajiv/.ghcup/env" # ghcup-env

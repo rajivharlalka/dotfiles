@@ -37,12 +37,6 @@ truncate_to_repo = true
 style = "bold cyan"
 disabled = false
 
-# [env_var]
-# variable = "SHELL"
-# default = "Zsh"
-# prefix = "<"
-# suffix = ">"
-
 [git_branch]
 symbol = "🌱 "
 truncation_length = 20
@@ -79,10 +73,6 @@ ssh_only = false
 trim_at = "."
 disabled = false
 
-# [jobs]
-# symbol = "+ "
-# threshold = 1
-
 [line_break]
 disabled = false
 
@@ -92,24 +82,10 @@ threshold = 40
 symbol = "🐏"
 style = "bold dimmed green"
 
-# [memory_usage]
-# disabled = false
-# show_percentage = true
-# show_swap = false
-# threshold = -1
-# symbol = " "
-# separator = "/"
-# style = "bold dimmed white"
-
 [nodejs]
 symbol = "⬢ "
 style = "bold green"
 disabled = false
-
-# [package]
-# symbol = "📦 "
-# style = "bold red"
-# disabled = false
 
 [python]
 symbol = "🐍 "

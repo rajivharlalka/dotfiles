@@ -1,7 +1,3 @@
-
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
 # ctrl+left and ctrl+left to move word by word
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
